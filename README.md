@@ -1,6 +1,6 @@
 # mealapp
 
-This template should help get you started developing with Vue 3  Vite.
+This template should help get you started developing with Vue 3 and Vite.
 
 ## Recommended IDE Setup
 
