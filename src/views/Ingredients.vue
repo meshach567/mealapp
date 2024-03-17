@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+
 <template>
   <div class="p-8 pb-0">
     <h1 class="text-4xl font-bold mb-4 text-orange-500">Ingredients</h1>
@@ -23,7 +25,7 @@
 </template>
 
 <script setup>
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import axiosClient from "../axiosClient";
@@ -33,7 +35,7 @@ const router = useRouter();
 const keyword = ref("");
 const ingredients = ref([]);
 const computedIngredients = computed(() => {
-  if (!computedIngredients) return ingredients;
+  if (!computedIngredients.value) return ingredients;
   return ingredients.value.filter((i) =>
     i.strIngredient.toLowerCase().includes(keyword.value.toLowerCase())
   );

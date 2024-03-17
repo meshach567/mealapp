@@ -1,3 +1,4 @@
+
 <template>
   <div class="p-8 pb-0">
     <h1 class="text-4xl font-bold mb-4 text-orange-500">Meals for {{ ingredient.strIngredient }}</h1>
@@ -7,7 +8,8 @@
 </template>
 
 <script setup>
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
+// eslint-disable-next-line no-unused-vars
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import store from "../store";

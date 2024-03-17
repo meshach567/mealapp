@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 import { onMounted, watch } from "vue";
 import { useRoute } from "vue-router";
 import store from "../store";
