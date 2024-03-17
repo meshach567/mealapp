@@ -1,14 +1,17 @@
 # Receipt Search app built with Vue.js
-I give credit to  `https://github.com/thecodeholic` for the tutorial along
+
+I give credit to [https://github.com/thecodeholic] for the tutorial along
+
 ## Demo
+
 [https://tc-search-meals.netlify.app](https://tc-search-meals.netlify.app/)
 
 ## Installation
+
 1. Clone the repository
 1. Run `npm install`
 1. Copy `.env.example` into `.env`
 1. Run `npm run dev` to start the application at http://localhost:3000
-
 
 ## Recommended IDE Setup
 
