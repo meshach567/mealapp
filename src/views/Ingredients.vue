@@ -1,5 +1,4 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-
 <template>
   <div class="p-8 pb-0">
     <h1 class="text-4xl font-bold mb-4 text-orange-500">Ingredients</h1>
@@ -11,10 +10,10 @@
       class="rounded border-2 bg-white border-gray-200 focus:ring-orange-500 focus:border-orange-500 mb-3 w-full"
       placeholder="Search for Ingredients"
     />
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3" v-if="computedIngredients">
       <a href="#"
         @click.prevent="openIngredient(ingredient)"
-        v-for="ingredient of computedIngredients"
+        v-for="ingredient of computedIngredients || []"
         :key="ingredient.idIngredient"
         class="block bg-white rounded p-3 mb-3 shadow"
       >

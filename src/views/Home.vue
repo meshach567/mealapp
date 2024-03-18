@@ -1,5 +1,4 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<!-- eslint-disable no-unused-vars -->
 <template>
   <div class="p-8 pb-0 text-orange-500">
     <h1 class="text-4xl font-bold mb-4">Random Meals</h1>
@@ -8,10 +7,7 @@
 </template>
 
 <script setup>
-// eslint-disable-next-line no-unused-vars
-import { computed, onMounted, ref } from "vue";
-// eslint-disable-next-line no-unused-vars
-import store from "../store";
+import {  onMounted, ref } from "vue";
 import Meals from "../components/Meals.vue";
 import axiosClient from "../axiosClient.js";
 
@@ -21,7 +17,7 @@ onMounted(async () => {
   for (let i = 0; i < 10; i++) {
     axiosClient
       .get(`random.php`)
-      .then(({ data }) => meals.value.push(data.meals[0]));
+      .then(({ data }) => meals.value.push(data.meals["0"]));
   }
 });
 </script>

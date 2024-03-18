@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <header class="bg-white shadow h-16 flex justify-between items-stretch">
     <router-link
